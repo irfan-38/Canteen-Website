@@ -1,0 +1,23 @@
+[
+    {
+       "id":1,
+       "name":"Chicken pizza",
+       "price":50,
+       "image":"pizza.png",
+       "btnId":"item1"
+    },
+    {
+        "id":2,
+        "name":"French Fries",
+        "price":45,
+        "image":"pizza.png",
+        "btnId":"item2"
+    },
+    {
+        "id":13,
+        "name":"Chicken Fried Rice",
+        "price":70,
+        "image":"chickenRice.png",
+        "btnId":"item10"
+    }
+]

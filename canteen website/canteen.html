@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canteen Menu</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="canteen.css" />
+  </head>
+  <body class="show">
+    <div class="header">
+      <h1>WELCOME TO CMR TECHNICAL CAMPUS CANTEEN</h1>
+      <nav>
+        <div class="logo">
+          <img src="logo.png"  alt="" />
+          <!-- <i class="uil uil-bars menuBar" onclick="tog('nav-items')"></i> -->
+        </div>
+        <div class="nav-item" id="nav-items">
+          <i class="uil uil-bars menuBar" onclick="tog('nav-items')"></i>
+          <a href="">  Home</a>
+          <a href="#" ><span onclick="showCart('cart')"> Cart</span> <span class="cart-items" >(0)</span></a>
+          <a href="login.html">Login</a> 
+        </div>  
+      </nav>
+    </div>
+    <main>
+      <div class="container">
+        <div class="categories" id="categories">
+          <h1>Categories</h1>
+          <nav>
+            <a href="#SnackItems">Snack Items</a>
+            <a href="#FastFood">Fast Food</a>
+            <a href="">Tiffins</a>
+            <a href="">Meals</a>
+            <a href="">Rotis</a>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="heading">
+            <h1>Snack Items</h1>
+          </div>
+          <div class="menu"  id="SnackItems">
+            <div class="items" id="1" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+                <h2>
+                Chicken Pizza(Medium)(Includes Cheese & Pepperoni) 
+                <span class="price"> Rs.100/-</span>
+                </h2>
+              </div>
+              <div class="btn">
+                <button class="addcart"  id="item1" onclick="myFun(1,'item1')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="2" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+                <h2>Chicken Burger(Medium) (Veggie,Extra Cheese & Bacon)
+                  <span class="price">- Rs.120/-</span>
+                </h2>
+                </h2>
+              </div>
+              <div class="btn">
+                <button id="item2" class="addcart" onclick="myFun('2','item2')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="3" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                French Fries 
+                <span>(Include peri-peri Masala)Rs.45/-</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item3" class="addcart" onclick="myFun(3,'item3')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="4" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                Momos 
+                <span>(Spicy Steamed Veggie Momos 6Pcs) Rs.60/-</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item4" class="addcart" onclick="myFun(4,'item4')">Add to Cart</button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="items" id="5" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                Chicken Nagets- Rs.100/-
+                <span>(Includes Cheese & Pepperoni 10pcs)</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item5" class="addcart" onclick="myFun(5,'item5')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="6" onclick="myFun(6,'item6')">
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                Veg Nagets - Rs.80/-
+                <span>(Includes Cheese & Paneer 10pcs)</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item6" class="addcart" onclick="myFun(6,'item6')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Fast Food</h1>
+          </div>
+          <div class="menu"  id="FastFood">  
+            <div class="items" id="VegNoodles" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                 VegNoodles (Include Fresh veggies & Tomota ketchup)
+                 <span>Rs.50/-</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item7" class="addcart"  onclick="myFun(7,'item7')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="8" onclick="myFun(8,'item8')">
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                Chicken Noodles(Include Chicken,Egg & Ketchup )
+                <span>Rs.70/-</span>
+              </h2>
+            </div>
+              <div class="btn">
+                <button id="item8" class="addcart" onclick="myFun(8,'item8')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="9" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+               Veg Fried Rice
+               (Include Veggies like Carrot ,Peas etc and Onions)
+               <span>Rs.50/-</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item9" class="addcart" onclick="myFun(9,'item9')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="10" >
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+                Egg Fried Rice 
+                (Include Scrambled eggs with Onion,Green Peas & Soy Sauce)
+                <span>Rs.60/-</span>
+              </h2>
+              </div>
+              <div class="btn">
+                <button id="item11" class="addcart" onclick="myFun(10,'item11')">Add to Cart</button>
+              </div>
+            </div>
+            <div class="items" id="11">
+              <div class="item-image">
+                <img src="pizza.png" alt="" />
+              </div>
+              <div class="item-discription">
+              <h2>
+               Veg Manchuria
+               (Include Cabbage & Soy Sauce with Spicy taste)
+               <span>Rs.50/-</span>
+              </h2>
+             </div>
+              <div class="btn">
+                <button id="item12" class="addcart"  onclick="myFun(11,'item12')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <section class="cart-items"> -->
+      <div class="cartTab" id="cart" >
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+          <div class="items">
+            <div class="image">
+                <img src="pizza.png" alt="" width="100px">
+            </div>
+            <div class="name">
+              NAME
+            </div>
+            <div class="totalPrice">
+                120/-
+            </div>
+            <div class="quantity">
+              <span class="minus"><</span>
+              <span>1</span>
+              <span class="plus">></span>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="close" onclick="closeCart('cart')">Close</button>
+          <button class="checkOut">CHECK OUT</button>
+        </div>
+      </div>
+
+    <!-- </section> -->
+
+    <script src="canteen.js"></script>
+    
+  </body>
+</html>
